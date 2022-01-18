@@ -22,7 +22,7 @@
     </Project>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>TemplateModWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=5b46dd1ac3ff9bf4</Assembly>
+    <Assembly>ModLoaderMod-vsTemplate, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=5b46dd1ac3ff9bf4</Assembly>
     <FullClassName>TemplateModWizard.WizardImplementation</FullClassName>
   </WizardExtension>
 </VSTemplate>

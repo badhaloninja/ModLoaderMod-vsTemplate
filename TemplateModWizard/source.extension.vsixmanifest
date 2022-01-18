@@ -4,6 +4,7 @@
         <Identity Id="badhaloninja.NeosModloaderModTemplate" Version="1.0.0" Language="en-US" Publisher="badhaloninja" />
         <DisplayName>Template NeosModloader Mod Project</DisplayName>
         <Description xml:space="preserve">Modify NeosVR's behavior via LibHarmony and NeosModloader</Description>
+        <MoreInfo>https://github.com/badhaloninja/ModLoaderMod-vsTemplate/blob/master/README.md</MoreInfo>
         <License>LICENSE.txt</License>
         <Icon>__TemplateIcon.png</Icon>
     </Metadata>
