@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Template NeosModLoader Mod</Name>
+    <Description>Modify NeosVR's behavior via LibHarmony</Description>
+    <Icon>__TemplateIcon.png</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>csharp</LanguageTag>
+    <RequiredFrameworkVersion>4.6.2</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>aa6ca306-6fa8-4997-a7a5-36c0807123a0</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>NewNeosMod</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.cs" OpenInEditor="true">Class1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="README.md" OpenInEditor="true">README.md</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>TemplateModWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=5b46dd1ac3ff9bf4</Assembly>
+    <FullClassName>TemplateModWizard.WizardImplementation</FullClassName>
+  </WizardExtension>
+</VSTemplate>
