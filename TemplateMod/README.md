@@ -1,6 +1,6 @@
 ﻿# $safeprojectname$
 
-A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/). $moddescription$
+A [NeosModLoader](https://github.com/neos-modding-group/NeosModLoader) mod for [Neos VR](https://neos.com/). $moddescription$
 
 ## Installation
 1. Install [NeosModLoader](https://github.com/zkxs/NeosModLoader).
