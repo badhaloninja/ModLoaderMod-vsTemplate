@@ -1,15 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMod", "TemplateMod\TemplateMod.csproj", "{E6D80301-0102-467E-A350-5D24966A7C9A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D70136C1-9EF7-43B8-B1AF-704847E0E827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateModWizard", "TemplateModWizard\TemplateModWizard.csproj", "{C33FF57A-4876-4C6E-8F80-7C4AF4D79709}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019", "TemplateModWizard\2019.csproj", "{C33FF57A-4876-4C6E-8F80-7C4AF4D79709}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedProject1", "SharedProject1\SharedProject1.shproj", "{F1EB2E96-8E7F-40E3-84D9-FE0693032847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2022", "Dev22\2022.csproj", "{4101F8CA-1F23-4C00-9DF7-785F45B40571}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedProject1\SharedProject1.projitems*{4101f8ca-1f23-4c00-9df7-785f45b40571}*SharedItemsImports = 4
+		SharedProject1\SharedProject1.projitems*{c33ff57a-4876-4c6e-8f80-7c4af4d79709}*SharedItemsImports = 4
+		SharedProject1\SharedProject1.projitems*{f1eb2e96-8e7f-40e3-84d9-fe0693032847}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -23,6 +32,10 @@ Global
 		{C33FF57A-4876-4C6E-8F80-7C4AF4D79709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C33FF57A-4876-4C6E-8F80-7C4AF4D79709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C33FF57A-4876-4C6E-8F80-7C4AF4D79709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4101F8CA-1F23-4C00-9DF7-785F45B40571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4101F8CA-1F23-4C00-9DF7-785F45B40571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4101F8CA-1F23-4C00-9DF7-785F45B40571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4101F8CA-1F23-4C00-9DF7-785F45B40571}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
