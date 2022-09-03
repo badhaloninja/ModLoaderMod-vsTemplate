@@ -18,6 +18,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.cs" OpenInEditor="true">Class1.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="README.md" OpenInEditor="true">README.md</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\launchSettings.json">launchSettings.json</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>

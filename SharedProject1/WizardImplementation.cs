@@ -14,7 +14,7 @@ namespace TemplateModWizard
         private string modDescription;
         private string targetType;
         private string targetMethod;
-
+        
         // This method is called before opening any item that
         // has the OpenInEditor attribute.
         public void BeforeOpeningFile(ProjectItem projectItem)
@@ -22,11 +22,15 @@ namespace TemplateModWizard
             try
             {
                 if (projectItem.Name != "README.md") return;
-
+                
                 Project project = projectItem.ContainingProject;
                 Solution solution = project.DTE.Solution;
 
-                if (String.IsNullOrEmpty(solution.FullName)) return; //When you place solution and project in same folder
+                if (String.IsNullOrEmpty(solution.FullName))
+                {
+                    projectItem.Remove();
+                    return;
+                }; //When you place solution and project in same folder
                 
                 string dir = Path.GetDirectoryName(solution.FullName);
                 string origPath = Path.GetFullPath(projectItem.FileNames[0]);
@@ -46,7 +50,7 @@ namespace TemplateModWizard
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ProjectFinishedGenerating ERROR: \n\n" + ex.ToString());
+                MessageBox.Show("BeforeOpeningFile ERROR: \n\n" + ex.ToString());
             }
         }
 
@@ -56,14 +60,34 @@ namespace TemplateModWizard
 
         // This method is only called for item templates,
         // not for project templates.
-        public void ProjectItemFinishedGenerating(ProjectItem
-            projectItem)
+        public void ProjectItemFinishedGenerating(ProjectItem projectItem)
         {
         }
 
         // This method is called after the project is created.
         public void RunFinished()
         {
+            /*MessageBox.Show("RunFinished ");
+            try
+            {
+                //project.ProjectItems.Count
+
+                MessageBox.Show("RunFinished " + Project.ProjectItems.Count);
+                for (int i = 1; i <= Project.ProjectItems.Count; i++)
+                {
+                    ProjectItem item = Project.ProjectItems.Item(i);
+                    MessageBox.Show(item.Name);
+                    *//*if (item.Name != "README.md")
+                    {
+                        item.Remove();
+                        MessageBox.Show("Removed " + item.Name);
+                    }*//*
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("RunFinished ERROR: \n\n" + ex.ToString());
+            }*/
         }
 
         public void RunStarted(object automationObject,
